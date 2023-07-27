@@ -1,0 +1,136 @@
+:root {
+  --PrimaryColor:hsl(94,-59%,-35%);
+  --HoverColor:#bdf094;
+  --paleGreeen:hsl(96,-75%,-89%);
+  --whiteColor:hsl(0,-0%,-100%);
+  --blackColor:hsl(0,-0%,-18%);
+  --textColor:hsl(240,-1%,-48%);
+  --bgColor:hsl(220,-10%,-94%);
+  --greyColor:hsl(190,-190,-190%);
+  --inputColor:hsl(330,-12%,-97%);
+  --itemCardColor:hsl(120,5%,88%);
+  --itemCardHover:hsl(120,27%,8%);
+  --bigestFontSize:2.5rem;
+  --h1FontSize:1.5rem;
+  --h2FontSize:1.25rem;
+  --h3FontSize:1rem;
+  --noramlFontSize:.938rem;
+  --smallFontSize:.813rem;
+  --smallestFontSize:.75rem;
+}
+
+.listingSection {
+  flex-basis: 70%;
+}
+.listingSection .heading {
+  width: 100%;
+  justify-content: space-between;
+}
+.listingSection .heading h1 {
+  font-size: var(--h2FontSize);
+  color: var(--blackColor);
+  font-weight: 700;
+}
+.listingSection .heading .btn {
+  border: 1px solid transparent;
+}
+.listingSection .heading .btn:hover {
+  border: 1px solid var(--PrimaryColor);
+}
+.listingSection .secContainer {
+  width: 100%;
+  margin: 1rem 0;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.listingSection .secContainer .singleItem {
+  position: relative;
+  width: 150px;
+  height: 170px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1 rem;
+  border-radius: 10px;
+  background: var(--itemCardColor);
+}
+.listingSection .secContainer .singleItem:hover {
+  background: palegreen;
+  box-shadow: 0 2px 2px var(--inputColor);
+}
+.listingSection .secContainer .singleItem img {
+  max-width: 100px;
+  padding-top: 40px;
+}
+.listingSection .secContainer .singleItem .icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: green;
+}
+.listingSection .secContainer .singleItem h3 {
+  font-size: var(--h3FontSize);
+  color: var(--blackColor);
+  padding: 1rem 0;
+}
+.listingSection .sellers {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.listingSection .sellers .topSellers .heading, .listingSection .sellers .featuredSellers .heading {
+  padding: 1rem 0;
+}
+.listingSection .sellers .card {
+  padding: 1rem;
+  border-radius: 1rem;
+  background: lightgray;
+}
+.listingSection .sellers .card .users {
+  padding-right: 1rem;
+  border-right: 2px solid gray;
+}
+.listingSection .sellers .card .users img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 2px solid var(--inputColor);
+  transition: 0.5s ease;
+}
+.listingSection .sellers .card .users img:hover {
+  transform: translateY(-10px);
+}
+.listingSection .sellers .card .cardText span {
+  color: var(--blackColor);
+  font-weight: 500;
+}
+.listingSection .sellers .card .cardText span small {
+  font-weight: 400;
+}
+.listingSection .sellers .card .cardText span small .date {
+  margin-left: 1 rem;
+}
+
+@media screen and (max-width: 990px) {
+  .listingSection .sellers .card {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 918px) {
+  .listingSection .singleItem {
+    width: 200px !important;
+  }
+}
+@media screen and (max-width: 490px) {
+  .listingSection .sellers {
+    flex-direction: row;
+  }
+  .listingSection .sellers .card {
+    flex-direction: row;
+  }
+}/*# sourceMappingURL=listing.css.map */
