@@ -1,0 +1,105 @@
+.box
+{
+    height: 10%;
+    width: 100%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    overflow: hidden;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+   z-index: 200;
+   background-color: whitesmoke;
+  
+  display: inline-block; 
+}
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo img {
+    width: 130px;
+    height: 40px;
+    padding-left: -300px;
+    margin-left: -620px;
+    margin-top: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    padding-left: 390px;
+    margin-top: -35px;
+  }
+  
+  nav li {
+    margin-right: 50px;
+    display: inline-block;
+
+    color: rgb(12, 12, 12);
+
+    text-align: justify;  
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+  }
+  
+  
+  .btn
+  {
+    /* display: flex;
+    float: right; */
+    padding-top: 15px;
+    /* gap: 10px; */
+    /* margin-right: 150px; */
+    display: block;
+  }
+  .b1,.b2{
+    padding: 12px 32px 12px 32px;
+    border-radius: 15px ;
+    font-size: 15px;
+  }
+.b1
+{
+   
+    border: 1px solid rgba(238, 64, 64, 0.893);
+    color:  rgba(238, 64, 64, 0.893);
+    background-color: white;
+ 
+    display: flex;
+    float: left;
+    margin-left: -170px;
+}
+.b2
+{
+      /* padding: 15px 25px 15px 25px; */
+      background-color:  rgba(238, 64, 64, 0.893);
+      color: white;
+      border: none;
+     
+      float: right;
+      margin-right: 150px;
+   
+}
+/* a {
+    text-decoration: none;
+    color:black;
+    font-size: 16px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.3s ease;
+  } */
+  
+ .navigation a:hover {
+    border-bottom-color: #007bff;
+    height: 100%;
+    width: 100%;
+    
+  }
+  
